@@ -1,4 +1,10 @@
-const express = require('express');
-const {router} = require('./routes/admin-routes');
+const express = require('express')
+const router = express.Router()
 
-route.length('/home', router);
+router.get('/welcome', (req, res) => {
+    res.json({
+        message: 'Welcome to the Admin Page',
+        
+    })
+})
+module.exports = router 

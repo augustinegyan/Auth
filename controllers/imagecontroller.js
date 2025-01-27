@@ -26,7 +26,7 @@ const uploadImageController = async (req, res) => {
     await newlyUploadedImage.save();
 
     //delete the file from local stroage
-    // fs.unlinkSync(req.file.path);
+   // fs.unlinkSync(req.file.path);
 
     res.status(201).json({
       success: true,
@@ -115,6 +115,8 @@ const deleteImageController = async (req, res) => {
     });
   }
 };
+
+
 
 module.exports = {
   uploadImageController,
